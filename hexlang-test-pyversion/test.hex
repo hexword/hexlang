@@ -1,0 +1,14 @@
+:factorial num:
+    copy x,num
+    int num,1
+    int end,1
+    ::y
+    mul num,x
+    dec x
+    noq x,end,t
+    goto y,t
+
+:main:
+    int some_var,10
+    factorial some_var
+    println some_var
